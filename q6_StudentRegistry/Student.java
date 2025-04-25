@@ -6,7 +6,7 @@ public class Student {
     private String name;                  // Name of the student
 
     // Constructor to initialize student ID and name
-    public Student(String name) {
+    Student(String name) {
         this.id = ++studentCount;        // Increment student count for each new student
         this.name = name;
     }

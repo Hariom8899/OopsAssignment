@@ -7,7 +7,7 @@ public class Truck extends Vehicle {
 
     // Mileage formula for Truck: (speed * 0.3) / (fuelCapacity * 1.2)
     public double getMileage() {
-        return (speed * 0.3) / (fuelCapacity * 1.2);
+        return (speed * 3) / (fuelCapacity * 1.2);
     }
 }
 

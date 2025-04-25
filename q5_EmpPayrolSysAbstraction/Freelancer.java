@@ -13,13 +13,11 @@ public class Freelancer extends Employee {
 
     @Override
     public double calculateSalary() {
-        // Freelancer salary is calculated based on hourly rate and hours worked
         return hourlyRate * hoursWorked;
     }
 
     @Override
     public void getDetails() {
-        // Display details of freelancer
         System.out.println("Freelancer: " + name + " (ID: " + id + ")");
         System.out.println("Hourly Rate: $" + hourlyRate);
         System.out.println("Hours Worked: " + hoursWorked);

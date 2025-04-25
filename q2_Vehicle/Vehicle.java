@@ -1,8 +1,8 @@
 package q2_Vehicle;
 
 public class Vehicle {
-    protected double speed;         // in km/h
-    protected double fuelCapacity;  // in liters
+    protected double speed;
+    protected double fuelCapacity;
 
     public Vehicle(double speed, double fuelCapacity) {
         this.speed = speed;
