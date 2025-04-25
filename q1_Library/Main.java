@@ -1,0 +1,28 @@
+package q1_Library;
+import java.util.List;
+
+public class Main {
+    public static void main(String[] args) {
+        // Create book objects
+        Book book1 = new Book("The Great Gatsby", "F. Scott Fitzgerald", "9780743273565");
+        Book book2 = new Book("To Kill a Mockingbird", "Harper Lee", "9780061120084");
+        Book book3 = new Book("1984", "George Orwell", "9780451524935");
+
+        // Create library object
+        Library library = new Library();
+
+        // Add books to library
+        library.addBook(book1);
+        library.addBook(book2);
+        library.addBook(book3);
+
+        // Search for a book by title
+        List<Book> searchResults = library.searchByTitle("1984");
+
+        // Print details of search results
+        for (Book book : searchResults) {
+            book.printDetails();
+        }
+    }
+}
+
