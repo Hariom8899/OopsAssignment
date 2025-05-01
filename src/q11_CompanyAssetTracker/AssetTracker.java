@@ -2,7 +2,6 @@ package q11_CompanyAssetTracker;
 
 import java.util.*;
 
-// Asset class
 class Asset {
     String assetId;
     String name;
@@ -12,7 +11,6 @@ class Asset {
         this.name = name;
     }
 
-    // Uniqueness based on assetId
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -36,17 +34,13 @@ public class AssetTracker {
     public static void main(String[] args) {
         // Map: department -> set of unique assets
         Map<String, Set<Asset>> departmentAssets = new HashMap<>();
-
-        // Global set to track all asset IDs
         Set<String> globalAssetIds = new HashSet<>();
 
-        // Add assets
         addAsset(departmentAssets, globalAssetIds, "IT", new Asset("A001", "Laptop"));
         addAsset(departmentAssets, globalAssetIds, "HR", new Asset("A002", "Projector"));
         addAsset(departmentAssets, globalAssetIds, "IT", new Asset("A003", "Server"));
         addAsset(departmentAssets, globalAssetIds, "Finance", new Asset("A001", "Laptop")); // Duplicate globally
 
-        // Print department assets
         printDepartmentAssets(departmentAssets);
     }
 

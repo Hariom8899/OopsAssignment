@@ -2,7 +2,6 @@ package q9_LeaderBoardTracker;
 
 import java.util.*;
 
-// Player class
 class Player {
     String name;
     int score;
@@ -12,7 +11,6 @@ class Player {
         this.score = score;
     }
 
-    // Optional: equals/hashCode based on name, so TreeSet doesn't treat same player as duplicate
     @Override
     public boolean equals(Object obj) {
         if (this == obj) return true;
@@ -34,7 +32,6 @@ class Player {
 
 public class Leaderboard {
     public static void main(String[] args) {
-        // Comparator: score descending, then name ascending
         Comparator<Player> playerComparator = (a, b) -> {
             if (b.score != a.score) return Integer.compare(b.score, a.score);
             return a.name.compareTo(b.name);
@@ -42,15 +39,12 @@ public class Leaderboard {
 
         TreeSet<Player> leaderboard = new TreeSet<>(playerComparator);
 
-        // Add initial players
         addOrUpdatePlayer(leaderboard, new Player("Alice", 150));
         addOrUpdatePlayer(leaderboard, new Player("Bob", 200));
         addOrUpdatePlayer(leaderboard, new Player("Charlie", 180));
 
-        // Update scores
         addOrUpdatePlayer(leaderboard, new Player("Alice", 220)); // Alice score updated
 
-        // Print leaderboard
         printLeaderboard(leaderboard);
     }
 

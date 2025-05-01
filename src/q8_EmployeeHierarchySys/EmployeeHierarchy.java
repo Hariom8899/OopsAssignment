@@ -43,7 +43,6 @@ class Manager {
     }
 }
 
-// You can also use enum or int for levels; using int here
 public class EmployeeHierarchy {
     public static void main(String[] args) {
         // Map: Manager -> TreeMap<Level, List<Employee>>

@@ -2,7 +2,6 @@ package q6_LibraryCatlog;
 
 import java.util.*;
 
-// Book class
 class Book {
     String title;
     String author;
@@ -53,8 +52,9 @@ public class LibraryCatalog {
         addBook(catalog, "Fantasy", new Book("The Hobbit", "J.R.R. Tolkien", 1937));
         addBook(catalog, "Fantasy", new Book("The Name of the Wind", "Patrick Rothfuss", 2007));
 
-        // Print books in a specific genre
-        printBooksByGenreSorted(catalog, "Science Fiction");
+        for (String key : catalog.keySet()) {
+            printBooksByGenreSorted(catalog, key);
+        }
     }
 
     // Adds a book to the genre set
