@@ -5,7 +5,7 @@ import java.io.IOException;
 
 public class q4_CountLines {
     public static void main(String[] args) {
-        String filePath = "data.txt"; // Specify the path to your file
+        String filePath = "src/data.txt"; // Specify the path to your file
         int lineCount = countLines(filePath);
         if (lineCount != -1) {
             System.out.println("Number of lines in 'data.txt': " + lineCount);

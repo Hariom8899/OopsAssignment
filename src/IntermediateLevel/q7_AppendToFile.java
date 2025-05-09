@@ -13,7 +13,7 @@ public class q7_AppendToFile {
         String lineToAppend = "Last updated on " + currentDate + "\n";
 
         // Try-with-resources to ensure the FileWriter is closed automatically
-        try (FileWriter fileWriter = new FileWriter("log.txt", true)) {
+        try (FileWriter fileWriter = new FileWriter("src/log.txt", true)) {
             // Append the line to the file
             fileWriter.write(lineToAppend);
             System.out.println("Appended the line: " + lineToAppend);

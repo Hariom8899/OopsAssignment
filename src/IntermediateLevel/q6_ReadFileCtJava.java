@@ -7,7 +7,7 @@ import java.io.IOException;
 
 public class q6_ReadFileCtJava {
     public static void main(String[] args) {
-        String filePath = "data.txt"; // Path to your input file
+        String filePath = "src/data.txt"; // Path to your input file
         String targetWord = "java"; // Word to search for
         int count = countWordOccurrences(filePath, targetWord);
         System.out.println("The word '" + targetWord + "' appears " + count + " times.");

@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class q2_ReadPrint  {
     public static void main(String[] args) {
-        File file = new File("input.txt");
+        File file = new File("src/input.txt");
 
         try (Scanner scanner = new Scanner(file)) {
             while (scanner.hasNextLine()) {

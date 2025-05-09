@@ -4,8 +4,8 @@ import java.nio.file.*;
 
 public class q5_copyFile {
     public static void main(String[] args) {
-        Path sourcePath = Paths.get("data.txt");
-        Path destinationPath = Paths.get("backup.txt");
+        Path sourcePath = Paths.get("src/data.txt");
+        Path destinationPath = Paths.get("src/backup.txt");
 
         try {
             // Copy the source file to the destination

@@ -8,7 +8,7 @@ public class q8_ReadCSVAndPrintUppercase {
 
     public static void main(String[] args) {
         // Specify the file path (assuming it's in the same directory as the program)
-        String fileName = "Employee.csv";
+        String fileName = "src/Employee.csv";
 
         // Read and process the CSV file
         try (BufferedReader br = new BufferedReader(new FileReader(fileName))) {
